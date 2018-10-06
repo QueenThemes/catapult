@@ -1,2 +1,2 @@
 # Catapult
-Catapult - HTML/CSS Flat File Scaffold 
+Catapult - HTML/CSS Flat File Scaffold
