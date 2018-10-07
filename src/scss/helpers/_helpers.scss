@@ -1,4 +1,4 @@
-.container {
+%container {
     width: 100%;
     max-width: 100%;
     @include spacing(margin, left right, auto);
@@ -21,8 +21,13 @@
     }
 }
 
-.no-scroll {
-    overflow: hidden;
+.container {
+    @extend %container;
+
+    &-fluid {
+        @extend %container;
+        max-width: 100%;
+    }
 }
 
 .image-container {
@@ -30,4 +35,8 @@
         display: block;
         width: 100%;
     }
+}
+
+.no-scroll {
+    overflow: hidden;
 }

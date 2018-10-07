@@ -1,6 +1,8 @@
 .block-content {
+    position: relative;
+
     &.content-media {
-        .container {
+        .block-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
