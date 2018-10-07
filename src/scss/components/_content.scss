@@ -13,6 +13,17 @@
                         flex-basis: $width;
                     }
                 }
+
+                @each $value in $horizontalAlign {
+                    &.align-#{$value} {
+                        @if($value == left){
+                            order: 1;
+                        }
+                        @if($value == right){
+                            order: 2;
+                        }
+                    }
+                }
             }
         }
     }
