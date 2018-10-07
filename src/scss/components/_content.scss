@@ -1,0 +1,19 @@
+.block-content {
+    &.content-media {
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .content-container, .media-container {
+                flex: 1 1 50%;
+
+                @each $key, $width in $widthRatios {
+                    &.width-#{$key} {
+                        flex-basis: $width;
+                    }
+                }
+            }
+        }
+    }
+}

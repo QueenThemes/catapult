@@ -13,3 +13,20 @@ $phone-container   : #{$phone-breakpoint} + (#{$container-gutter} * 2);
 $tablet-container  : #{$tablet-breakpoint} + (#{$container-gutter} * 2);
 $laptop-container  : #{$laptop-breakpoint} + (#{$container-gutter} * 2);
 $desktop-container : #{$desktop-breakpoint} + (#{$container-gutter} * 2);
+
+/* Horizontal Alignment */
+$horizontalAlign: (
+    left,
+    center,
+    right
+);
+
+/* Width Ratios */
+$widthRatios: (
+    100 : 100%,
+    75  : (3 / 4) * 100%,
+    66  : (2 / 3) * 100%,
+    50  : (1 / 2) * 100%,
+    33  : (1 / 3) * 100%,
+    25  : (1 / 4) * 100%
+);

@@ -1,0 +1,25 @@
+/* Text Align Classes */
+@each $value in $horizontalAlign {
+    .text-#{$value} {
+        text-align: $value;
+    }
+}
+
+/* Horizontal Align Classes */
+@each $value in $horizontalAlign {
+    .align-#{$value} {
+        @if($value == right or $value == center){
+            margin-left: auto;
+        }
+        @if($value == left or $value == center){
+            margin-right: auto;
+        }
+    }
+}
+
+/* Width Ratio Classes */
+@each $key, $width in $widthRatios {
+    .width-#{$key} {
+        max-width: #{$width};
+    }
+}
